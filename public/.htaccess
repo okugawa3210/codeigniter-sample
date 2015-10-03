@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteBase /codeigniter
+
+RewriteCond $1 !^(assets)
+RewriteRule \/assets\/(.*)$ /codeigniter/assets/$1 [L]
+RewriteCond $1 !^(index\.php|assets|robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ /codeigniter/index.php/$1 [L]
+RewriteCond $1 (favicon\.ico)
+RewriteRule .*\/(.*)$ /codeigniter/$1 [L]

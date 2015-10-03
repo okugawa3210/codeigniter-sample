@@ -1,0 +1,27 @@
+@import "base";
+.page-main {
+  padding-top: 70px;
+}
+.page-title {
+  height: 100px;
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+// tree view
+.tree {
+  list-style: none;
+  padding: 0;
+  .tree {
+    padding-left: 40px;
+  }
+  .tree-label {
+    position: relative;
+    .badge {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

@@ -64,6 +64,9 @@ gulp.task('script', function() {
     .pipe($.plumber())
     .pipe($.babel())
     // .pipe($.concat('application.min.js'))
+    .pipe($.uglify({
+      preserveComments: 'some'
+    }))
     .pipe($.rename({
       extname: '.min.js'
     }))
